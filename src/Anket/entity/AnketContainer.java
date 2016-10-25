@@ -15,9 +15,8 @@ public class AnketContainer {
     }
 
     public static void writeContainer(AnketContainer container) {
-        String path = "/home/ddexster/IdeaProjects/Anket/stats.json";
         Gson gson = new GsonBuilder().create();
-        try (PrintWriter writer = new PrintWriter(new FileWriter(path))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("/home/ddexster/IdeaProjects/Anket/stats.json"))) {
             writer.print(gson.toJson(container));
         } catch (IOException e) {
             e.printStackTrace();
@@ -25,9 +24,8 @@ public class AnketContainer {
     }
 
     public static AnketContainer getContainer() {
-        String path = "/home/ddexster/IdeaProjects/Anket/stats.json";
         Gson gson = new GsonBuilder().create();
-        String json = parseFile(path);
+        String json = parseFile("/home/ddexster/IdeaProjects/Anket/stats.json");
         return gson.fromJson(json, AnketContainer.class);
     }
 
@@ -45,10 +43,9 @@ public class AnketContainer {
     }
 
     private static void initAnket() {
-        String path = "/home/ddexster/IdeaProjects/Anket/stats.json";
         Gson gson = new GsonBuilder().create();
         AnketContainer container = new AnketContainer();
-        try (PrintWriter writer = new PrintWriter(new FileWriter(path))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("/home/ddexster/IdeaProjects/Anket/stats.json"))) {
             writer.print(gson.toJson(container));
         } catch (IOException e) {
             e.printStackTrace();

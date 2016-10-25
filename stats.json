@@ -1,0 +1,16 @@
+{
+  "os": {
+    "osMap": {
+      "linux": 9,
+      "windows": 7,
+      "iOs": 3
+    }
+  },
+  "ide": {
+    "ideMap": {
+      "idea": 9,
+      "netbeans": 3,
+      "eclipse": 7
+    }
+  }
+}

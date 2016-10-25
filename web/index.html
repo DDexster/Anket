@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Anket</title>
+</head>
+<body>
+<form action="/statistics" method="POST">
+    <div align="center">
+        <h2><b>What OS do you like most?</b></h2>
+        <table width="300px">
+            <tr align="center">
+                <td><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Windows_logo_%E2%80%93_2012_(dark_blue).svg/50px-Windows_logo_%E2%80%93_2012_(dark_blue).svg.png"/>
+                </td>
+                <td><input name="os" type="radio" value="windows">Windows</td>
+            </tr>
+            <tr align="center">
+                <td><img src="https://pp.vk.me/c629510/v629510801/2af1d/A5FXZ7ybA8w.jpg"></td>
+                <td><input name="os" type="radio" value="iOs">MacOS</td>
+            </tr>
+            <tr align="center">
+                <td><img src="http://programy.com.ua/categoriesimages/linux_distributions/linux_icon.png"></td>
+                <td><input name="os" type="radio" value="linux">Linux/Unix</td>
+            </tr>
+        </table>
+
+        <h2><b>What IDE do you use for Java?</b></h2>
+        <table width="300px">
+            <tr align="center">
+                <td><img src="http://www.obnovisoft.ru/images/icons/intellij-idea.png"></td>
+                <td><input name="ide" type="radio" value="idea">IntelliJIdea</td>
+            </tr>
+            <tr align="center">
+                <td><img src="http://www.eclipse.org/downloads/images/committers.png"></td>
+                <td><input name="ide" type="radio" value="eclipse">Eclipse</td>
+            </tr>
+            <tr align="center">
+                <td><img
+                        src="https://cdn0.iconfinder.com/data/icons/48px_icons_collection_by_neweravin/48/netbeans.png">
+                </td>
+                <td><input name="ide" type="radio" value="netbeans">NetBeans</td>
+            </tr>
+        </table>
+
+        <p><input type="submit"></p>
+    </div>
+
+</form>
+</body>
+</html>
